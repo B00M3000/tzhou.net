@@ -1,0 +1,14 @@
+---
+import ProjectCard from '../components/ProjectCard.astro';
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout title="Projects">
+	<main class="h-full w-full flex flex-col items-center">
+        <span class="text-5xl mt-24">My Projects</span>
+        <div class="flex items-center justify-center flex-wrap sm:mx-36 mt-16 gap-4">
+            <ProjectCard name="Mindustry Schematics" backgroundImage="/ms.png" url="https://mindustryschematics.com"/>
+            <ProjectCard name="Commonwealth Project Week" backgroundImage="/cpw.png" url="https://cpw.tzhou.net"/>
+        </div>
+	</main>
+</Layout>

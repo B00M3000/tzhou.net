@@ -1,0 +1,10 @@
+---
+const { name, backgroundImage, url } = Astro.props;
+---
+
+<a href={url} class="flex flex-col items-start justify-start rounded-xl relative p-4 w-[30rem] h-[18rem] border-2 border-gray-400 hover:scale-[1.02] hover:shadow-xl transition-[transform_.02]">
+    <span class="font-bold text-2xl text-white">{name}</span>
+    <div class="absolute top-0 left-0 w-full h-full blur-sm saturate-[.55] -z-10 overflow-clip">
+        <img class="w-full h-full rounded-xl" src={backgroundImage}/>
+    </div>
+</a>
